@@ -1,5 +1,5 @@
-const { addUser } = require("../app/user/controllers/add-user")
+const { login } = require("../app/auth")
 
 module.exports = router => {
-    router.post('/add-user', addUser)
+    router.post('/login', login)
 }
